@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar';
 import './global.css';
 
 
@@ -5,7 +6,7 @@ import './global.css';
 function App() {
   return (
     <div className="App">
-      <h1>Olá mundo</h1>
+      <Navbar/>
     </div>
   );
 }

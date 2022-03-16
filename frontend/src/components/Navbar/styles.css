@@ -1,0 +1,48 @@
+
+.ideal-nav-content, header {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    align-items: center;
+    padding: 1em;
+}
+
+.list {
+    margin: 0;
+    font-family: 'SF Pro Display';
+    font-size: 18px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin-right: 2em;
+}
+
+.item a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #fff;
+}
+
+#icon-style {
+    width: 9vw;
+    height: 9vh;
+}
+
+@media only screen and (min-width:0px) and (max-width: 990px) {
+    #icon-style {
+        width: 90px;
+    }
+
+    .item a{
+        font-size: 13px;
+    }
+}
+
+
