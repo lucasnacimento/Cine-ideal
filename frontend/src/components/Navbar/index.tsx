@@ -10,6 +10,7 @@ function Navbar() {
           <ul className="list">
             <li className="item"><a href="/">Inicio</a></li>
             <li className="item"><a href="/">Contato</a></li>
+            <li className="item"><a href="/">Avaliações</a></li>
           </ul>
         </div>
       </nav>
