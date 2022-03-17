@@ -1,9 +1,13 @@
+header {
+    background-color: var(--color-secondary); 
+    height: 60px;
+    display: flex;
+    align-items: center;
+ }
 
-.ideal-nav-content, header {
-    height: 12vh;
+.ideal-nav-content {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-secondary);
     align-items: center;
     padding: 1em;
 }
