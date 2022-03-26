@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { IMAGE_URL, KEY_API, LANGUAGE_CODE, URL_DETAILS_MOVIE } from '../../config/request';
-import { Movie, MovieDetails } from '../../types/movie';
+import { MovieDetails } from '../../types/movie';
 
 import './styles.css';
 

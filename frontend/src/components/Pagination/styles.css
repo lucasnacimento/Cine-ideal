@@ -1,0 +1,25 @@
+.panel-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.panel-item {
+    margin: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    background-image: linear-gradient(45deg, var(--color-secondary), rgba(236, 16, 16, 0.829));
+    font-size: 1.1rem;
+}
+
+button:hover:enabled {
+    border-width: 2px;
+    border-style: ridge;
+    border-color: #fff;
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+}

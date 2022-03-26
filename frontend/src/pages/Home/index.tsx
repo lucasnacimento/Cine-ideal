@@ -5,6 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { URL_BASE_POPULAR, KEY_API, LANGUAGE_CODE } from '../../config/request';
 import { MoviePage } from "../../types/movie";
+import Pagination from "../../components/Pagination";
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
     total_results: 0,
     qtdItemsFromPage: 20,
     beforePage: pageNumber-1,
-    laterPage: pageNumber+1
+    laterPage: pageNumber+1,
   });
 
   useEffect(() => {
@@ -28,7 +29,6 @@ function Home() {
         setPage(data);
       });
       
-      console.log(page.results);
     }, [pageNumber]);
 
   const handlePageChange = (newPageNumber: number) => {
@@ -49,6 +49,7 @@ function Home() {
           ))}
 
         </div>
+        <Pagination page={page} onChange={handlePageChange}/>
       <Footer/>
     </>
   );
