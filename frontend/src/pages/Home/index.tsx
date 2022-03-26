@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { URL_BASE_POPULAR, KEY_API, LANGUAGE_CODE } from '../../config/request';
 import { MoviePage } from "../../types/movie";
 import Pagination from "../../components/Pagination";
+import Carousel from "../../components/Carousel";
 
 function Home() {
 
@@ -38,6 +39,7 @@ function Home() {
   return (
     <>
       <Navbar />
+      <Carousel/>
         <div className="d-flex justify-content-center mt-5">
           <h1>Filmes</h1>
         </div>
